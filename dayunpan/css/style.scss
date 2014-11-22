@@ -9,7 +9,7 @@ fieldset,img{border: 0;}
 :focus{outline: none}
 h1, h2, h3, h4, h5, h6{font-weight:normal;font-size:100%;}
 a{text-decoration: none;}
-/*css reset end*/ 
+/*css reset end*/
 
 /*公用代码*/
 body{
@@ -70,21 +70,37 @@ button{
 }
 .header{
     padding: 15px 0;
+    background: #b70900;
+    h1 {
+        position:relative;
+        a img {
+            width: 152px;
+        }
+        .sub-title {
+            position:absolute;
+            right: -270px;
+            width: 260px;
+            height: 60px;
+            top: 10px;
+            color: #e78c87;
+            font-size: 14px;
+        }
+    }
     .search{
         margin-top: 10px;
         margin-left: 60px;
         input{
-            border: 2px solid #2a2a2a;
+            border: 2px solid #ffb400;
             width: 405px;
             padding: 8px 5px;
             font-size: 14px;
             color: #333;
         }
         button{
-            background: #2a2a2a;
-            color: #ffb400;
+            background: #ffb400;
+            color: #77581f;
             width: 80px;
-            height: 36px;
+            height: 37px;
             line-height: 36px;
             text-align: center;
             font-size: 16px;
@@ -94,6 +110,13 @@ button{
     }
     .hot-keywords{
         padding-top: 10px;
+        color: #e1d5d7;
+        a {
+            color: #e1d5d7;
+            &:hover {
+                color: #ffb400;
+            }
+        }
         strong{
             font-weight: bold;
         }
@@ -104,7 +127,7 @@ button{
 }
 /*导航*/
 .main-nav{
-    background: #2a2a2a;
+    background: #ffb400;
     height: 44px;
     line-height: 44px;
     .menu{
@@ -113,17 +136,18 @@ button{
         }
         .current{
             a,a:hover{
-                background: #ffb400;
-                color: #2a2a2a;   
+                background: #830801;
+                color: #e1d5d7;
             }
         }
         .m-name{
             display: block;
             padding: 0 24px;
             font-size: 14px;
-            color: #ffb400;
+            color: #77581f;
             &:hover{
-                background: #000;
+                color: #e1d5d7;
+                background: #830801;
             }
         }
         .has-sub-menu{
@@ -135,17 +159,19 @@ button{
             position: absolute;
             z-index: 3;
             width: 380px;
-            padding: 10px 22px;
-            background: #000;
-            background: rgba(0,0,0,0.8);
+            padding: 10px 0;
+            background: #830801;
+            background: rgba(131,8,1,0.8);
             line-height: 2;
             li{
                 width: 25%;
                 a{
-                    padding: 2px 4px;
+                    padding: 2px 10px;
                     display: inline-block;
+                    width: 85%;
+                    color: #e1d5d7;
                     &:hover{
-                        background: #000;
+                        background: #830801;
 
                     }
                 }
@@ -158,6 +184,7 @@ button{
             margin: 0 4px;
             a{
                 _display: inline-block;
+                color: #77581f;
             }
             .icon{
                 display: inline-block;
@@ -172,6 +199,7 @@ button{
                 width: 12px;
                 background-position: left top;
             }
+
         }
         .user-msg{
             .icon{
@@ -186,17 +214,20 @@ button{
             }
         }
         .mini-cart{
-            background: #ffb400;
+            background: #820802;
             font-size: 14px;
             padding: 0 15px;
             a{
-                color: #2a2a2a;
-                
+                color: #e1d5d7;
+
             }
             .icon{
-                width: 23px;
-                margin-right: 10px;
+                width: 25px;
+                height: 24px;
+                margin-right: 8px;
                 background-position: -80px top;
+                position:relative;
+                top: -2px;
             }
         }
     }
@@ -211,7 +242,7 @@ button{
 .pro-panel{
     margin-bottom: 50px;
     .hd{
-        border-bottom: 4px solid #ffb400;
+        border-bottom: 4px solid #b70900;
         margin-bottom: 28px;
         .title{
             font-family: '微软雅黑';
@@ -328,7 +359,7 @@ button{
                 font-size: 14px;
             }
         }
-        
+
     }
     .summary{
         font-size: 14px;
@@ -343,12 +374,12 @@ button{
     }
 }
 .footer{
-    background: #222222;
+    background: #7d0802;
     font-size: 14px;
     color: #fff;
     text-align: center;
     a{
-        color: #fff;
+        color: #e1d5d7;
         &:hover{
             color: #ffb400;
         }
@@ -368,7 +399,7 @@ button{
         padding: 30px 0 40px;
         line-height: 1.8;
         font-size: 12px;
-        color: #777777;
+        color: #e1d5d7;
     }
 }
 
@@ -442,7 +473,7 @@ button{
     }
     .show-price{
         background: #ebebeb;
-        padding: 15px;   
+        padding: 15px;
         .sale-price{
             border-bottom: 1px dashed #d0d0d0;
             margin-bottom: 10px;
@@ -601,8 +632,8 @@ button{
         }
     }
     .active{
-        background: #2a2a2a;
-        color: #ffb400;
+        background: #830801;
+        color: #e1d5d7;
     }
 }
 .pro-des-detail{

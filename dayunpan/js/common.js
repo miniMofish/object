@@ -1,7 +1,7 @@
 $(function () {
     //导航下拉
     $('.has-sub-menu').mouseenter(function() {
-        $(this).find('ul').show().end().css('background','#000');
+        $(this).find('ul').show().end().css('background','#830801');
     }).mouseleave(function() {
         $(this).find('ul').hide().end().css('background','none');
     });
@@ -48,7 +48,7 @@ $(function () {
     });
     $('.pro-item-ul li').each(function(){
         $(this).click(function(){
-            var path = $(this).attr('data-img');    
+            var path = $(this).attr('data-img');
             $('.pro-big-img').html('<img src="' + path + '" width="450" height="375" />');
             $('.pro-item-ul li').removeClass('active');
             $(this).addClass('active');

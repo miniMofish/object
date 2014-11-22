@@ -79,28 +79,46 @@ button {
       color: #ffb400; }
 
 .header {
-  padding: 15px 0; }
+  padding: 15px 0;
+  background: #b70900; }
+  .header h1 {
+    position: relative; }
+    .header h1 a img {
+      width: 152px; }
+    .header h1 .sub-title {
+      position: absolute;
+      right: -270px;
+      width: 260px;
+      height: 60px;
+      top: 10px;
+      color: #e78c87;
+      font-size: 14px; }
   .header .search {
     margin-top: 10px;
     margin-left: 60px; }
     .header .search input {
-      border: 2px solid #2a2a2a;
+      border: 2px solid #ffb400;
       width: 405px;
       padding: 8px 5px;
       font-size: 14px;
       color: #333; }
     .header .search button {
-      background: #2a2a2a;
-      color: #ffb400;
+      background: #ffb400;
+      color: #77581f;
       width: 80px;
-      height: 36px;
+      height: 37px;
       line-height: 36px;
       text-align: center;
       font-size: 16px;
       vertical-align: bottom;
       *vertical-align: baseline; }
   .header .hot-keywords {
-    padding-top: 10px; }
+    padding-top: 10px;
+    color: #e1d5d7; }
+    .header .hot-keywords a {
+      color: #e1d5d7; }
+      .header .hot-keywords a:hover {
+        color: #ffb400; }
     .header .hot-keywords strong {
       font-weight: bold; }
   .header .top-tel {
@@ -108,21 +126,22 @@ button {
 
 /*导航*/
 .main-nav {
-  background: #2a2a2a;
+  background: #ffb400;
   height: 44px;
   line-height: 44px; }
   .main-nav .menu li {
     float: left; }
   .main-nav .menu .current a, .main-nav .menu .current a:hover {
-    background: #ffb400;
-    color: #2a2a2a; }
+    background: #830801;
+    color: #e1d5d7; }
   .main-nav .menu .m-name {
     display: block;
     padding: 0 24px;
     font-size: 14px;
-    color: #ffb400; }
+    color: #77581f; }
     .main-nav .menu .m-name:hover {
-      background: #000; }
+      color: #e1d5d7;
+      background: #830801; }
   .main-nav .menu .has-sub-menu {
     position: relative;
     z-index: 3; }
@@ -131,22 +150,25 @@ button {
     position: absolute;
     z-index: 3;
     width: 380px;
-    padding: 10px 22px;
-    background: #000;
-    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    background: #830801;
+    background: rgba(131, 8, 1, 0.8);
     line-height: 2; }
     .main-nav .menu .sub-menu li {
       width: 25%; }
       .main-nav .menu .sub-menu li a {
-        padding: 2px 4px;
-        display: inline-block; }
+        padding: 2px 10px;
+        display: inline-block;
+        width: 85%;
+        color: #e1d5d7; }
         .main-nav .menu .sub-menu li a:hover {
-          background: #000; }
+          background: #830801; }
   .main-nav .user-assi li {
     float: left;
     margin: 0 4px; }
     .main-nav .user-assi li a {
-      _display: inline-block; }
+      _display: inline-block;
+      color: #77581f; }
     .main-nav .user-assi li .icon {
       display: inline-block;
       background: url(../img/icon.png) no-repeat;
@@ -165,15 +187,18 @@ button {
     margin-right: 0;
     margin-left: 5px; }
   .main-nav .user-assi .mini-cart {
-    background: #ffb400;
+    background: #820802;
     font-size: 14px;
     padding: 0 15px; }
     .main-nav .user-assi .mini-cart a {
-      color: #2a2a2a; }
+      color: #e1d5d7; }
     .main-nav .user-assi .mini-cart .icon {
-      width: 23px;
-      margin-right: 10px;
-      background-position: -80px top; }
+      width: 25px;
+      height: 24px;
+      margin-right: 8px;
+      background-position: -80px top;
+      position: relative;
+      top: -2px; }
 
 .banner {
   margin-bottom: 26px; }
@@ -184,7 +209,7 @@ button {
 .pro-panel {
   margin-bottom: 50px; }
   .pro-panel .hd {
-    border-bottom: 4px solid #ffb400;
+    border-bottom: 4px solid #b70900;
     margin-bottom: 28px; }
     .pro-panel .hd .title {
       font-family: '微软雅黑'; }
@@ -284,12 +309,12 @@ button {
     text-decoration: line-through; }
 
 .footer {
-  background: #222222;
+  background: #7d0802;
   font-size: 14px;
   color: #fff;
   text-align: center; }
   .footer a {
-    color: #fff; }
+    color: #e1d5d7; }
     .footer a:hover {
       color: #ffb400; }
   .footer .foot-nav {
@@ -306,7 +331,7 @@ button {
     padding: 30px 0 40px;
     line-height: 1.8;
     font-size: 12px;
-    color: #777777; }
+    color: #e1d5d7; }
 
 /*产品页面*/
 .crumbs {
@@ -491,8 +516,8 @@ button {
     .pro-des-nav li:hover {
       color: #ffb400; }
   .pro-des-nav .active {
-    background: #2a2a2a;
-    color: #ffb400; }
+    background: #830801;
+    color: #e1d5d7; }
 
 .pro-des-detail {
   display: none; }
