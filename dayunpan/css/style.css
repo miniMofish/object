@@ -157,9 +157,9 @@ button {
     .main-nav .menu .sub-menu li {
       width: 25%; }
       .main-nav .menu .sub-menu li a {
-        padding: 2px 10px;
+        padding: 2px 0 2px 10px;
         display: inline-block;
-        width: 85%;
+        width: 89%;
         color: #e1d5d7; }
         .main-nav .menu .sub-menu li a:hover {
           background: #830801; }
